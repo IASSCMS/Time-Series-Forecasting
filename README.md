@@ -3,9 +3,44 @@ This repository contains all necessary training methods, datasets, and works rel
 
 ## Running the Backend Service
 
+### Setup Environment
+
+Before running the service, you need to set up a Python virtual environment:
+
+#### Create and Activate Virtual Environment
+
+On Windows:
+```bash
+# Create virtual environment
+python -m venv .venv
+
+# Activate virtual environment
+.venv\Scripts\activate
+```
+
+On macOS/Linux:
+```bash
+# Create virtual environment
+python3 -m venv .venv
+
+# Activate virtual environment (or Git Bash)
+source .venv/Scripts/activate
+```
+
+#### Install Dependencies
+```bash
+# Install requirements
+cd forecasting_service
+pip install -r requirements.txt
+```
+
+### Django Commands
+
 The project includes a Makefile with the following commands to manage the Django backend service:
 
-### Starting the Server
+- Ensure that you are in the project's root directory where the `Makefile` is located.
+
+#### Starting the Server
 ```bash
 # Start the Django server with migrations
 make run-server
@@ -13,7 +48,7 @@ make run-server
 This will:
 1. Create migrations for the forecastApp
 2. Apply migrations to the database
-3. Start the Django server at  http://localhost:8000/
+3. Start the Django server at http://localhost:8000/
 
 ### Other Commands
 
