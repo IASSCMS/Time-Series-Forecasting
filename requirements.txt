@@ -2,3 +2,7 @@ Django
 djangorestframework
 django-cors-headers
 python-dotenv
+joblib
+pandas
+scikit-learn
+prophet
